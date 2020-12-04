@@ -41,7 +41,7 @@ Now when you run the script it should work. Do so by running `python3 main.py`
 The script sends requests (via the request module) to the roku device when you press keys. 
 
 # "But you should've done this not this" 
-I am not the best programmer in the world, if you have a suggestion leave an issue and I will get to it other then that, enjoy your new remote.
+I am not the best programmer in the world, if you have a suggestion leave an issue and I will get to it. Other then that, enjoy your new remote.
 
 
 also inb4 roku dmca
