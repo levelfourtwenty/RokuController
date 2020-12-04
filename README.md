@@ -7,10 +7,16 @@ This program takes Keyboard input from a user when ran, it allows for entry of w
 The Keybinds are as follows.
 
 Arrows - Simple movement, you will be able to figure this out. 
+
 Escape - Back
+
 Ctrl+I - Info
+
 select - Enter
+
 Home - Home Key
+
+You can also type when you want to search, it has latin characters and all of the digits, feel free to add more characters as you see fit.
 
 More are to come, This was enough to navigate the menus for the period of time that I used it'll be fine for now. 
 
