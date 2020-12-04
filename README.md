@@ -2,8 +2,7 @@
 This is the result of me losing my remote :)
 
 # What is this program and how do I use it?
-This program takes Keyboard input from a user when ran, it allows for entry of words, navigation around applications via any computer, I decided to develop it as I
-saw a lack of programs to control roku devices via a computer.
+This program takes Keyboard input from a user when ran, it allows for entry of words, navigation around applications via any computer on the same network as the device, I decided to develop it as I saw a lack of programs to control roku devices via a computer.
 
 The Keybinds are as follows.
 
