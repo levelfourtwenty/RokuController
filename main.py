@@ -7,10 +7,12 @@ urltyping = "http://{YOUR ROKU LOCAL IP HERE}:8060/keypress/Lit_"
 def main():
 	try:
 		with Input(keynames='curses') as input_generator:
+			#this takes input from the user"
 			for keypress in input_generator:
 				print(keypress)
+				#these if statements filter for keys that do certain things on the remote#
 				if keypress == ("KEY_UP"):
-					requests.post(f"{url}/Up")
+					requests.post(f"{url}/Up") #the lines similar to this send the http requests#
 				if keypress == ("KEY_DOWN"):
 					requests.post(f"{url}/Down")
 				if keypress == (f"KEY_LEFT"):
@@ -30,6 +32,7 @@ def main():
 
 				else: 
 					requests.post(f"{urltyping}{keypress}")
+					#this sends all other input as typed input#
 						
 	except:
 		 exit()
