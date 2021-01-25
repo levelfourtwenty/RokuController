@@ -4,6 +4,18 @@ import requests
 url = "http://{YOUR ROKU LOCAL IP HERE}:8060/keypress"
 urltyping = "http://{YOUR ROKU LOCAL IP HERE}:8060/keypress/Lit_"
 
+actions = {
+	'KEY_UP': 'Up',
+	'KEY_DOWN': 'Down',
+	'KEY_LEFT': 'Left',
+	'KEY_RIGHT': 'Right',
+	'\n': 'Select',
+	'KEY_HOME': 'Home',
+	'KEY_BACKSPACE': 'Backspace',
+	'\t': 'Info',
+	'\x1b': 'Back'
+}
+
 def main():
 	try:
 		with Input(keynames='curses') as input_generator:
@@ -11,28 +23,10 @@ def main():
 			for keypress in input_generator:
 				print(keypress)
 				#these if statements filter for keys that do certain things on the remote#
-				if keypress == ("KEY_UP"):
-					requests.post(f"{url}/Up") #the lines similar to this send the http requests#
-				if keypress == ("KEY_DOWN"):
-					requests.post(f"{url}/Down")
-				if keypress == (f"KEY_LEFT"):
-					requests.post(f"{url}/Left")
-				if keypress == (f"KEY_RIGHT"):
-					requests.post(f"{url}/Right")
-				if keypress == (f"\n"):
-					requests.post(f"{url}/Select")
-				if keypress == (f"KEY_HOME"):
-					requests.post(f"{url}/Home")
-				if keypress == (f"KEY_BACKSPACE"):
-					requests.post(f"{url}/Backspace")
-				if keypress == (f"\t"):
-					requests.post(f"{url}/Info")
-				if keypress == (f"\x1b"):
-					requests.post(f"{url}/Back")
-
-				else: 
-					requests.post(f"{urltyping}{keypress}")
-					#this sends all other input as typed input#
+				if keypress not in actions:
+					requests.post(f'{urltyping}{keypress}')
+				else:
+					requests.post(f'{url}/' + actions[keypress])
 						
 	except:
 		 exit()
