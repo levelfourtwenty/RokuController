@@ -12,8 +12,8 @@ actions = {
 	'\n': 'Select',
 	'KEY_HOME': 'Home',
 	'KEY_BACKSPACE': 'Backspace',
-	'\t', 'Info',
-	'\x1b', 'Back'
+	'\t': 'Info',
+	'\x1b': 'Back'
 }
 
 def main():
