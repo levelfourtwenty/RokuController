@@ -14,4 +14,4 @@ def main():
 					
 	
 if __name__ == '__rokucontroller__':
-	rokucontroller()
+	main()
