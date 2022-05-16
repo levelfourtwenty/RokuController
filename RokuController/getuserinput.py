@@ -6,6 +6,7 @@ import socket
 def checkValidity(ip):
 	try:
 		socket.inet_aton(ip_str)
+		return 0
 	except socket.error:
 		return 1
 
@@ -14,7 +15,7 @@ def main():
 		raise ValueError("No IP address argument given.")
 		exit()
 	
-	ip = sys.argv[2]
+	ip = sys.argv[1]
 	print(ip)
 	if checkValidity(ip) == 1:
 		raise ValueError("Invalid IP address")
