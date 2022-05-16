@@ -6,7 +6,7 @@ This program takes Keyboard input from a user when ran, it allows for entry of w
 
 # Installation
 
-To install the latest release via PyPi:
+To install the latest release via PyPi:<br />
 `$ pip install RokuController`
 
 To install the latest release via setup.py:<br />
