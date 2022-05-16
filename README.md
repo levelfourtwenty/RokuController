@@ -15,7 +15,7 @@ To install the latest release via setup.py:<br />
  # Usage
  Usage of the program is relatively self explanatory, the keybinds are listed in [keybinds.md](https://github.com/levelfourtwenty/RokuController/blob/main/keybinds.md).
  
- To start the program, use:<br \>
+ To start the program, use:<br />
  ```$ rokucontroller <ip of the device>```
  
  
