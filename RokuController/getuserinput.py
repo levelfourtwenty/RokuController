@@ -1,6 +1,5 @@
 from curtsies import Input
 import RokuController
-import sendHttpRequests
 
 def main():
 	actions = RokuController.requestHandler.actions
