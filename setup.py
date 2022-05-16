@@ -7,15 +7,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
   name = 'RokuController',         
   packages = ['RokuController'],   
-  version = '1.0.1beta', 
+  version = '1.0.2beta', 
   license='gpl-2.0',        
   description = 'An easy to use Roku cli interface.',   
   author = 'Levelfourtwenty',                
   author_email = 'level420@protonmail.com',     
   long_description=long_description,
   long_description_content_type="text/markdown",
+  include_package_data=True,
   url = 'https://github.com/levelfourtwenty/RokuController/',  
-  download_url = 'https://github.com/levelfourtwenty/RokuController/v_1.0.1beta.tar.gz',\
+  download_url = 'https://github.com/levelfourtwenty/RokuController/v_1.0.2beta.tar.gz',\
   keywords = ['Controller', 'Roku Cli', 'Roku'],
   install_requires=[            
           'requests',
