@@ -1,5 +1,6 @@
 from curtsies import Input
 import RokuController
+import sendHttpRequests
 
 def main():
 	actions = RokuController.requestHandler.actions
@@ -8,9 +9,9 @@ def main():
 			print(keypress)
 			# Checks to see if keypress is a command or is something that is to be used as user text input
 			if keypress not in actions:
-				RokuController.requestHandler.sendRequests(keypress, True)
+				sendHttpRequests.requestHandler.sendRequests(keypress, True)
 			else:
-				RokuController.requestHandler.sendRequests(actions[keypress], False)
+				sendHttpRequests.requestHandler.sendRequests(actions[keypress], False)
 					
 	
 if __name__ == '__rokucontroller__':
