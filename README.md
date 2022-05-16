@@ -1,5 +1,5 @@
 # RokuController
-A simple cli controller for Roku devices that utilizes the roku external control API.
+A simple cli controller for Roku devices that utilizes the Roku external control API.
 
 # What is this program and how do I use it?
 This program can be used to control Roku devices via the command line, you can use it to control your Roku device and enter text onto it via the command line. 
