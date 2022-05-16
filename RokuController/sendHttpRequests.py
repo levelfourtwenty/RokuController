@@ -25,11 +25,9 @@ class requestHandler:
 		# filters off user input into typed input and non-typed input and requests accordingly
 			if typing == True:
 				request = f"http://{ip}:8060/keypress/Lit_{keypress}"
-				print(request)
 				requests.post(request)
 			else:
 				request = f"http://{ip}:8060/keypress/{keypress}"
-				print(request)
 				requests.post(request)	
 			return 0
 	
