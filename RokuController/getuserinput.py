@@ -1,9 +1,24 @@
 import sys
 from curtsies import Input
 from RokuController import sendHttpRequests
+import socket
+
+def checkValidity(ip):
+	try:
+		socket.inet_aton(ip_str)
+	except socket.error:
+		return 1
 
 def main():
+	if len(sys.argv) != 1:
+		raise ValueError("No IP address argument given.")
+		exit()
+	
 	ip = sys.argv[1]
+	if checkValidity(ip) == 1:
+		raise ValueError("Invalid IP address")
+		exit()
+
 	actions = sendHttpRequests.requestHandler.actions
 	with Input(keynames='curses') as input_generator:
 		for keypress in input_generator:
@@ -17,3 +32,5 @@ def main():
 	
 if __name__ == '__getuserinput__':
 	main()
+
+
