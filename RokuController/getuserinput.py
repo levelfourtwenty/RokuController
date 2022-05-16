@@ -5,7 +5,7 @@ import socket
 
 def checkValidity(ip):
 	try:
-		socket.inet_aton(ip_str)
+		socket.inet_aton(ip)
 		return 0
 	except socket.error:
 		return 1
