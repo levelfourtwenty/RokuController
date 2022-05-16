@@ -5,6 +5,6 @@
 * Home - Home key
 * Select - Enter
 * Tab - Info
-* + - Volume Up (on compatible devices)
-* - - Volume Down (on compatible devices)
+* \+ - Volume Up (on compatible devices)
+* \- - Volume Down (on compatible devices)
 * Delete - Power Off (on compatible devices)
