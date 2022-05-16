@@ -8,7 +8,7 @@ setup(
   author = 'Levelfourtwenty',                
   author_email = 'level420@protonmail.com',     
   url = 'https://github.com/levelfourtwenty/RokuController/',  
-  download_url = 'https://github.com/levelfourtwenty/RokuController/v_01.1.tar.gz',
+  download_url = 'https://github.com/levelfourtwenty/RokuController/v_0.1.1.tar.gz',
   keywords = ['Controller', 'Roku Cli', 'Roku'],
   install_requires=[            
           'requests',
@@ -26,6 +26,6 @@ setup(
     'Programming Language :: Python :: 3.10',
   ],
     entry_points = {
-        'console_scripts': ['rokucontroller=RokuController:main'],
+        'console_scripts': ['rokucontroller=RokuController:getuserinput'],
     }
 )
