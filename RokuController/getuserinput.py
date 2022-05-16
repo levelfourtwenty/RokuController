@@ -27,6 +27,7 @@ def main():
 	actions = sendHttpRequests.requestHandler.actions
 	with Input(keynames='curses') as input_generator:
 		for keypress in input_generator:
+			print(keypress)
 			# Checks to see if keypress is a command or is something that is to be used as user text input
 			if keypress not in actions:
 				sendHttpRequests.requestHandler.sendRequests(keypress, True, ip)
