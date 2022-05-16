@@ -3,3 +3,4 @@ setup.cfg
 setup.py
 RokuController/getuserinput.py
 RokuController/sendHttpRequests.py
+README.md
