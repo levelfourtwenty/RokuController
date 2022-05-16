@@ -1,3 +1,4 @@
+import sys
 from curtsies import Input
 from RokuController import sendHttpRequests
 
