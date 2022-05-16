@@ -1,4 +1,9 @@
 from distutils.core import setup
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+
 setup(
   name = 'RokuController',         
   packages = ['RokuController'],   
@@ -7,6 +12,8 @@ setup(
   description = 'An easy to use Roku cli interface.',   
   author = 'Levelfourtwenty',                
   author_email = 'level420@protonmail.com',     
+  long_description=long_description,
+  long_description_content_type="text/markdown",
   url = 'https://github.com/levelfourtwenty/RokuController/',  
   download_url = 'https://github.com/levelfourtwenty/RokuController/v_1.0.1beta.tar.gz',\
   keywords = ['Controller', 'Roku Cli', 'Roku'],
