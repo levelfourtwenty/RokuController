@@ -1,1 +1,1 @@
-from rokucontroller import main
+from rokucontroller import rokucontroller
