@@ -18,10 +18,8 @@ class requestHandler:
 	}
 	# The final three actions are specific to Roku TVs and therefore may not work on some devices
 
-	def sendRequests(keypress, typing):
-		ip = os.getenv('ROKU_IP')
-		if ip == None:
-			raise ValueError("IP environment variable not set")
+	def sendRequests(keypress, typing, var):
+		ip = var
 		# Checks environment variable to see if it is set, raises if not set
 		try:	
 		# filters off user input into typed input and non-typed input and requests accordingly
