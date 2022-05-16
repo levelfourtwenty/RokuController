@@ -10,11 +10,12 @@ def checkValidity(ip):
 		return 1
 
 def main():
-	if len(sys.argv) != 1:
+	if len(sys.argv) != 2:
 		raise ValueError("No IP address argument given.")
 		exit()
 	
-	ip = sys.argv[1]
+	ip = sys.argv[2]
+	print(ip)
 	if checkValidity(ip) == 1:
 		raise ValueError("Invalid IP address")
 		exit()
