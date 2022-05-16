@@ -13,7 +13,7 @@ def checkValidity(ip):
 
 def main():
 	f = Figlet(font='slant')
-	print f.renderText('RokuController')
+	print(f.renderText('RokuController'))
 	print('\n\n\n')
 	if len(sys.argv) != 2:
 		raise ValueError("No IP address argument given.")
