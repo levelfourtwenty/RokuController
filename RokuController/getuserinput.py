@@ -2,7 +2,7 @@ from curtsies import Input
 import RokuController
 
 def main():
-	actions = requestHandler.actions
+	actions = RokuController.requestHandler.actions
 	with Input(keynames='curses') as input_generator:
 		for keypress in input_generator:
 			print(keypress)
