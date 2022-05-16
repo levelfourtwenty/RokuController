@@ -9,9 +9,9 @@ def main():
 			print(keypress)
 			# Checks to see if keypress is a command or is something that is to be used as user text input
 			if keypress not in actions:
-				sendHttpRequests.requestHandler.sendRequests(keypress, True)
+				RokuController.requestHandler.sendRequests(keypress, True)
 			else:
-				sendHttpRequests.requestHandler.sendRequests(actions[keypress], False)
+				RokuController.requestHandler.sendRequests(actions[keypress], False)
 					
 	
 if __name__ == '__rokucontroller__':

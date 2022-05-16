@@ -1,2 +1,2 @@
 from getuserinput import *
-from sendHttpRequests import *
+from sendHttpRequests import requestHandler
