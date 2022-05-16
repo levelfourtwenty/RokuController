@@ -9,14 +9,13 @@ This program takes Keyboard input from a user when ran, it allows for entry of w
 To install the latest release via PyPi:
 `$ pip install RokuController`
 
-To install the latest release via setup.py:
- ```$ git clone https://github.com/levelfourtwenty/RokuController/```
-```$ python setup.py install```
+To install the latest release via setup.py:<br />
+ `$ git clone https://github.com/levelfourtwenty/RokuController/` <br /> `$ python setup.py install`
  
  # Usage
  Usage of the program is relatively self explanatory, the keybinds are listed in [keybinds.md](https://github.com/levelfourtwenty/RokuController/blob/main/keybinds.md).
  
- To start the program, use:
+ To start the program, use:<br \>
  ```$ rokucontroller <ip of the device>```
  
  
