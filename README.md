@@ -2,7 +2,7 @@
 A simple cli controller for Roku devices that utilizes the roku external control API.
 
 # What is this program and how do I use it?
-This program takes Keyboard input from a user when ran, it allows for entry of words, navigation around applications via any computer on the same network as the device, I decided to develop it as I saw a lack of programs to control roku devices via a computer.
+This program can be used to control Roku devices via the command line, you can use it to control your Roku device and enter text onto it via the command line. 
 
 # Installation
 
