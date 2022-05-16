@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'RokuController',         
   packages = ['RokuController'],   
-  version = '0.14', 
+  version = '0.15', 
   license='gpl-2.0',        
   description = 'An easy to use Roku cli interface.',   
   author = 'Levelfourtwenty',                
   author_email = 'level420@protonmail.com',     
   url = 'https://github.com/levelfourtwenty/RokuController/',  
-  download_url = 'https://github.com/levelfourtwenty/RokuController/v_014.tar.gz',
+  download_url = 'https://github.com/levelfourtwenty/RokuController/v_015.tar.gz',
   keywords = ['Controller', 'Roku Cli', 'Roku'],
   install_requires=[            
           'requests',
