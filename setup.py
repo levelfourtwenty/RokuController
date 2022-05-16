@@ -11,10 +11,7 @@ setup(
   license='gpl-2.0',        
   description = 'An easy to use Roku cli interface.',   
   author = 'Levelfourtwenty',                
-  author_email = 'level420@protonmail.com',     
-  long_description=long_description,
-  long_description_content_type="text/markdown",
-  include_package_data=True,
+  author_email = 'level420@protonmail.com',
   url = 'https://github.com/levelfourtwenty/RokuController/',  
   download_url = 'https://github.com/levelfourtwenty/RokuController/v_1.0.2beta.tar.gz',\
   keywords = ['Controller', 'Roku Cli', 'Roku'],
