@@ -26,6 +26,6 @@ setup(
     'Programming Language :: Python :: 3.10',
   ],
     entry_points = {
-        'console_scripts': ['rokucontroller=rokucontroller.main:main'],
+        'console_scripts': ['rokucontroller=rokucontroller.rokucontroller:main'],
     }
 )
